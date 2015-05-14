@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Usage: offyt [-v] PLAYLIST [OUTPUTDIR]
 """
@@ -10,7 +11,7 @@ import re
 import sys
 import youtube_dl
 
-arguments = docopt.docopt(__doc__, version='offyt 0.1')
+arguments = docopt.docopt(__doc__, version='offyt 0.1.3')
 
 outputdir = arguments['OUTPUTDIR'] or "./"
 playlist = arguments['PLAYLIST']

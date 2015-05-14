@@ -14,11 +14,19 @@ my server and keep _that_ synchronized to my phone when on WiFi.
 Installation
 ------------
 
+#### Using PIP:
+```bash
+pip install offyt
+# offyt.py --help
+```
+
+#### Manual:
 ```bash
 git clone git@github.com:koenbollen/offyt.git
 cd offyt
 python setup.py build
 sudo python setup.py install
+# offyt.py --help
 ```
 
 
@@ -26,7 +34,7 @@ Usage
 -----
 
 ```bash
-offyt [-v] PLAYLIST [OUTPUTDIR]
+offyt.py [-v] PLAYLIST [OUTPUTDIR]
 ```
 
 Where -v is verbose and OUTPUTDIR defaults to the current working directory.

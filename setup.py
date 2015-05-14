@@ -1,17 +1,16 @@
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
-
-install_reqs = parse_requirements("./requirements.txt")
-reqs = [str(ir.req) for ir in install_reqs]
-print(reqs)
 
 setup(
     name="offyt",
-    version="0.1",
-    packages=find_packages(),
+    version="0.1.3",
+    packages=[],
     scripts=['offyt.py'],
 
-    install_requires=reqs,
+    install_requires=[
+        'docopt==0.6.2',
+        'filelock==1.0.3',
+        'youtube-dl==2015.5.10',
+    ],
 
     author="Koen Bollen",
     author_email="meneer@koenbollen.nl",
